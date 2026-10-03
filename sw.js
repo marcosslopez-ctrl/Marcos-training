@@ -1,4 +1,4 @@
-const C = 'marcos-training-v2';
+const C = 'marcos-training-v2.1';
 const assets = ['./', './index.html', './manifest.json'];
 self.addEventListener('install', event => event.waitUntil(
   caches.open(C).then(cache => cache.addAll(assets)).then(() => self.skipWaiting())

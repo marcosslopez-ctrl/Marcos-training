@@ -1,45 +1,44 @@
-MARCOS TRAINING V2
+MARCOS TRAINING V2.1
 
-Subir index.html, manifest.json y sw.js a la raíz del repositorio
-https://github.com/marcosslopez-ctrl/Marcos-training
-mediante Add file → Upload files → Commit changes. Reemplazar los archivos
-con el mismo nombre; no subir la carpeta ni el ZIP como archivos del sitio.
-Mantener la configuración de GitHub Pages y la dirección actual.
+ACTUALIZAR
+Descomprimir el ZIP y subir index.html, manifest.json y sw.js directamente
+a la raíz de https://github.com/marcosslopez-ctrl/Marcos-training mediante
+Add file → Upload files → Commit changes, reemplazando los existentes.
+No subir el ZIP ni una carpeta intermedia. Mantener la URL y Pages actuales.
+Después del despliegue, abrir la PWA del iPhone con conexión, cerrarla y
+volver a abrirla hasta ver V2.1. No desinstalar ni borrar los datos de Safari.
 
-Después del despliegue, abrir la app con conexión, cerrarla y volver a abrirla.
-La etiqueta V2 bajo el encabezado confirma la actualización. Si aún aparece V1,
-volver a abrir con conexión una vez que Pages termine de publicar.
-No desinstalar la PWA ni borrar los datos de Safari.
+USO
+• Al abrir, podés consultar la rutina y el historial. Sin sesión, el reloj
+  queda en 00:00 y los campos están bloqueados.
+• Iniciar entrenamiento habilita los campos y registra la hora de inicio.
+• Si cerrás y volvés, Continuar entrenamiento recupera la sesión del día
+  correspondiente. Se conserva el tiempo desde el inicio, incluido el tiempo
+  con la app cerrada; no hay pausa automática.
+• Podés consultar otros días durante una sesión, pero no registrar en ellos.
+  Continuar entrenamiento vuelve a la sesión pendiente.
+• Finalizar entrenamiento pide confirmación y guarda en el historial.
+• Descartar sesión pide confirmación y elimina solamente el borrador de ese
+  día y su descanso, sin añadir nada al historial. Los otros días se conservan.
+• Para probar: iniciar, cargar datos y terminar con Descartar sesión.
+• Si había un borrador de V2, aparece Continuar borrador. Los datos se
+  conservan; el reloj comienza al retomarlo porque V2 no guardaba el inicio.
+  Si era una prueba vieja, usar Descartar sesión antes de entrenar.
 
-Cambios:
-1. Cada serie muestra kg, reps y RIR del mismo número de serie del último
-   entrenamiento guardado de ese ejercicio que tenga series completadas.
-   Las series sin completar no se usan como referencia y no se renumeran.
-2. Al completar todas las series, se recomienda subir carga si todas alcanzan
-   el máximo de reps sin bajar del RIR objetivo; revisar carga si alguna queda
-   por debajo del mínimo de reps o del RIR objetivo; en los demás casos,
-   mantener e intentar más reps. El RIR 0–1 admite ambos valores.
-   Se comparan las reps totales cuando las cargas coinciden, y se indica cuando
-   las cargas cambian o no existe una sesión anterior completa comparable.
-   Sin kg, reps o RIR reales completos, se pide completar los datos.
-3. Marcar ✓ inicia el descanso del ejercicio; para rangos usa el máximo
-   indicado. Otra serie completada inicia un nuevo descanso. Desmarcar la
-   serie que lo inició cancela ese descanso. El tiempo se conserva al recargar.
-   Hay señal visual, sonido si el navegador lo permite y vibración si existe.
-   Con iPhone bloqueado o la app en segundo plano no se garantiza el aviso:
-   al volver, el contador se recalcula y muestra que el descanso terminó.
-   No se añadieron servidor ni notificaciones push.
+COMPATIBILIDAD
+Rutina y funciones de V2 conservadas: referencia anterior por serie,
+progresión por ejercicio y descanso automático. El aviso en iPhone bloqueado
+sigue sin estar garantizado; al volver se recalcula el descanso.
+workouts, activeDay y draft-{día}-{ejercicio}-{serie} mantienen sus formatos.
+No se migran ni eliminan los registros existentes durante la actualización.
+La clave nueva marcos-training-session-v1 guarda día y hora de inicio.
+La caché del sitio se renueva, sin borrar el almacenamiento de entrenamientos.
 
-Compatibilidad:
-Se mantienen workouts, activeDay y draft-{día}-{ejercicio}-{serie}, con los
-mismos formatos de V1. No hay migración ni limpieza de localStorage.
-Solo se agrega marcos-v2-rest para el descanso. El service worker renueva
-la caché de archivos de la app; esto no borra el historial ni los borradores.
-manifest.json se entrega sin cambios para conservar el inicio de la PWA.
-
-Verificación:
-Rutina idéntica a la V1 descargada del repositorio; pruebas de conservación
-de almacenamiento, referencias, recomendaciones, datos incompletos, inicio,
-cancelación y vencimiento del descanso, y guardado sin perder sesiones previas.
-Prueba en navegador de ingreso de datos, progresión, descanso y referencias
-tras guardar. El sonido y la ejecución en un iPhone físico quedan por verificar.
+VERIFICACIÓN
+Pruebas de modo consulta sin escritura, inicio, recarga y continuación,
+conservación de la hora inicial, aislamiento de días, confirmaciones,
+descarte sin historial, conservación de borradores de V2, guardado de
+la duración y conservación del historial. También pasaron las pruebas de
+referencias, progresión y descanso de V2. Prueba en navegador de inicio,
+carga, descanso y continuación tras recargar. Pendiente validar sonido y
+comportamiento en un iPhone físico.
