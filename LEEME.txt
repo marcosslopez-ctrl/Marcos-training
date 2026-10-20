@@ -1,21 +1,67 @@
-MARCOS TRAINING V2.2
+MARCOS TRAINING V3 — NUTRICIÓN
 
-En cada ejercicio, elegí Máquina / variante o tocá + Agregar alternativa.
-Cada alternativa conserva sus propios pesos y compara únicamente con sus
-sesiones anteriores. Los registros existentes pertenecen a la opción original.
-Las alternativas mantienen las series, reps objetivo, RIR y descanso del ejercicio.
-Podés alternar antes de finalizar sin mezclar los campos cargados.
-Al finalizar se guarda SOLO la alternativa seleccionada de cada ejercicio.
+INSTALAR EN LA MISMA DIRECCIÓN
+1. Descomprimí el ZIP.
+2. Abrí https://github.com/marcosslopez-ctrl/Marcos-training/upload/main
+3. Subí los CUATRO archivos sueltos: index.html, nutrition.js, manifest.json y sw.js.
+   nutrition.js es nuevo y es necesario. No subas la carpeta ni el ZIP al sitio.
+4. Confirmá Commit changes y esperá la publicación de GitHub Pages.
+5. Abrí la app con conexión, cerrala y volvé a abrirla. El encabezado dirá V3 · Nutrición.
+No desinstales la app ni borres datos de Safari. Conservá la misma dirección.
+El historial local no se transfiere solo entre navegadores o dispositivos.
 
-ACTUALIZAR
-Subí index.html, manifest.json y sw.js a la raíz del repositorio
-https://github.com/marcosslopez-ctrl/Marcos-training
-reemplazando los archivos del mismo nombre. No subas el ZIP al sitio.
-Mantené la misma dirección de GitHub Pages. Abrí la app con conexión,
-cerrala y volvé a abrirla hasta ver V2.2.
-No borres los datos de Safari ni desinstales la app: el historial está en el dispositivo.
+PRIMER USO
+Entrá en Nutrición y elegí Cargar dieta habitual. Las comidas quedan pendientes.
+Editá porciones/alimentos y confirmá cada comida que realmente consumiste.
+Podés cargar fechas anteriores desde el selector de fecha.
+Marcá Día completo solo después de registrar todo. Editar una comida reabre el día.
+Una comida no consumida puede quitarse o quedar pendiente; nunca se suma.
+Las cantidades son crudas y comestibles: sin hueso, pollo sin piel.
 
-Se preservan historial anterior, borradores originales y sesión pendiente.
-Pruebas automatizadas: separación de historial y borradores por máquina,
-cambio de alternativa, guardado y comparación con registros anteriores.
-Verificación visual en iPhone pendiente.
+PLAN ACORDADO
+Referencia inicial: 2.910 kcal/día. Macros orientativos: 165 g proteína,
+405 g carbohidratos y 75 g grasas. Son objetivos de prueba, no un superávit real medido.
+La plantilla suma aproximadamente 2.910 kcal con muslo sin piel y arroz.
+Desayuno: 3 galletas Dos Hermanos, 1 huevo, 2 claras, 20 g aceitunas.
+Dos colaciones de 3 muffins: receta de 6 con 1 huevo, 2 claras, 350 g boniato,
+100 g maltodextrina, 30 g whey ISO Gold y 20 g mantequilla de maní.
+Almuerzo y cena: 80 g arroz, 150 g muslo sin piel, 10 g aceite y 175 g verduras.
+Post/colación: 30 g whey y 30 g maltodextrina. Los 5 g de creatina habituales
+no se contabilizan como calorías. Frutas: 120 g banana y 75 g kiwi comestibles.
+80 g arroz se pueden reemplazar aproximadamente por 380 g papa; cambiar también
+la cantidad en el formulario. Cada corte de carne tiene su propia estimación.
+
+DATOS Y ESTIMACIONES
+Whey, galletas y maltodextrina usan las etiquetas compartidas. Los alimentos
+frescos, verduras, mantequilla de maní y carnes usan valores promedio aproximados.
+La etiqueta whey declara energía que no coincide exactamente con sus macros:
+se conserva la energía declarada. No se fuerza coincidencia matemática.
+Pulver incluye vitaminas C/E; la preferencia acordada es maltodextrina sin vitaminas.
+No se cargaron tus mediciones ni datos de Garmin como si fueran registros nuevos.
+
+RECETAS, COMIDAS Y OBJETIVOS
+Plan y respaldo permite ajustar receta y objetivos. Los cambios de receta afectan
+solo cargas futuras; las comidas ya cargadas conservan su receta y nutrientes.
+Guardar como frecuente conserva una copia de una comida para reutilizarla.
+Los nuevos objetivos rigen desde hoy; los días anteriores conservan sus objetivos.
+
+SEGUIMIENTO
+Peso y cintura se registran por fecha. Evolución muestra ventanas de 7 días,
+con promedios de alimentación solo de días completos, cobertura y sesiones guardadas.
+El cambio de peso exige al menos 3 mediciones en cada una de dos semanas.
+No hay cambios automáticos de objetivos ni estimaciones de músculo ganado.
+Garmin y su importación CSV quedan para la siguiente etapa acordada.
+
+RESPALDO
+Plan y respaldo > Descargar copia completa: archivo JSON con entrenamientos,
+máquinas, borradores, descanso/sesión pendiente, nutrición, comidas frecuentes,
+recetas, metas y medidas. Incluye únicamente datos de Marcos Training.
+Para restaurar, seleccioná el archivo JSON, revisá el resumen y confirmá.
+La restauración REEMPLAZA los datos de la app: exportá tu copia actual antes.
+No se sube información a ningún servidor. Guardá el archivo en un lugar privado.
+
+VERIFICACIÓN
+Pruebas automatizadas en navegador con pantalla móvil: confirmación de consumo,
+porciones, persistencia, recetas/objetivos históricos, cobertura semanal,
+comidas frecuentes, exportación/restauración y datos de entrenamiento anteriores.
+Pendiente: prueba en tu iPhone físico y publicación en GitHub Pages.
