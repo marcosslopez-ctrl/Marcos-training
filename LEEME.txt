@@ -1,4 +1,4 @@
-MARCOS TRAINING V3 — NUTRICIÓN
+MARCOS TRAINING V3.1 — EJERCICIOS EXTRA
 
 INSTALAR EN LA MISMA DIRECCIÓN
 1. Descomprimí el ZIP.
@@ -6,7 +6,7 @@ INSTALAR EN LA MISMA DIRECCIÓN
 3. Subí los CUATRO archivos sueltos: index.html, nutrition.js, manifest.json y sw.js.
    nutrition.js es nuevo y es necesario. No subas la carpeta ni el ZIP al sitio.
 4. Confirmá Commit changes y esperá la publicación de GitHub Pages.
-5. Abrí la app con conexión, cerrala y volvé a abrirla. El encabezado dirá V3 · Nutrición.
+5. Abrí la app con conexión, cerrala y volvé a abrirla. El encabezado dirá V3.1 · Ejercicios extra.
 No desinstales la app ni borres datos de Safari. Conservá la misma dirección.
 El historial local no se transfiere solo entre navegadores o dispositivos.
 
@@ -65,3 +65,18 @@ Pruebas automatizadas en navegador con pantalla móvil: confirmación de consumo
 porciones, persistencia, recetas/objetivos históricos, cobertura semanal,
 comidas frecuentes, exportación/restauración y datos de entrenamiento anteriores.
 Pendiente: prueba en tu iPhone físico y publicación en GitHub Pages.
+
+
+NOVEDAD V3.1: EJERCICIOS EXTRA
+Iniciá o continuá la sesión. Al final de los ejercicios abrí + Agregar ejercicio extra.
+Indicá nombre, cantidad de series, rango de reps, RIR objetivo y descanso en segundos.
+El extra permite cargar kg/reps/RIR, marcar series e iniciar el descanso automáticamente.
+Se conserva al recargar o cerrar la app y queda identificado en el historial al finalizar.
+Se agrega solo a la sesión, sin cambiar la rutina predeterminada de las próximas sesiones.
+Si lo repetís, usá el mismo nombre para recuperar la comparación anterior. Usá nombres
+diferentes para máquinas o variantes cuyas cargas no quieras comparar entre sí.
+Quitar extra elimina sus series de la sesión actual, pero no su historial previo.
+Finalizar o descartar limpia los extras de esa sesión. Las copias incluyen los pendientes.
+Se conserva Nutrición, recetas, comidas, medidas y el resto de las funciones de V3.
+Pruebas: alta/baja, persistencia, descanso, aislamiento por día, guardado, totales,
+comparación posterior, descarte, validación de respaldo y diseño móvil sin desbordes.

@@ -1,4 +1,4 @@
-const C = 'marcos-training-v3';
+const C = 'marcos-training-v3.1';
 const assets = ['./', './index.html', './manifest.json', './nutrition.js'];
 self.addEventListener('install', event => event.waitUntil(
   caches.open(C).then(cache => cache.addAll(assets)).then(() => self.skipWaiting())
