@@ -1,44 +1,21 @@
-MARCOS TRAINING V2.1
+MARCOS TRAINING V2.2
+
+En cada ejercicio, elegí Máquina / variante o tocá + Agregar alternativa.
+Cada alternativa conserva sus propios pesos y compara únicamente con sus
+sesiones anteriores. Los registros existentes pertenecen a la opción original.
+Las alternativas mantienen las series, reps objetivo, RIR y descanso del ejercicio.
+Podés alternar antes de finalizar sin mezclar los campos cargados.
+Al finalizar se guarda SOLO la alternativa seleccionada de cada ejercicio.
 
 ACTUALIZAR
-Descomprimir el ZIP y subir index.html, manifest.json y sw.js directamente
-a la raíz de https://github.com/marcosslopez-ctrl/Marcos-training mediante
-Add file → Upload files → Commit changes, reemplazando los existentes.
-No subir el ZIP ni una carpeta intermedia. Mantener la URL y Pages actuales.
-Después del despliegue, abrir la PWA del iPhone con conexión, cerrarla y
-volver a abrirla hasta ver V2.1. No desinstalar ni borrar los datos de Safari.
+Subí index.html, manifest.json y sw.js a la raíz del repositorio
+https://github.com/marcosslopez-ctrl/Marcos-training
+reemplazando los archivos del mismo nombre. No subas el ZIP al sitio.
+Mantené la misma dirección de GitHub Pages. Abrí la app con conexión,
+cerrala y volvé a abrirla hasta ver V2.2.
+No borres los datos de Safari ni desinstales la app: el historial está en el dispositivo.
 
-USO
-• Al abrir, podés consultar la rutina y el historial. Sin sesión, el reloj
-  queda en 00:00 y los campos están bloqueados.
-• Iniciar entrenamiento habilita los campos y registra la hora de inicio.
-• Si cerrás y volvés, Continuar entrenamiento recupera la sesión del día
-  correspondiente. Se conserva el tiempo desde el inicio, incluido el tiempo
-  con la app cerrada; no hay pausa automática.
-• Podés consultar otros días durante una sesión, pero no registrar en ellos.
-  Continuar entrenamiento vuelve a la sesión pendiente.
-• Finalizar entrenamiento pide confirmación y guarda en el historial.
-• Descartar sesión pide confirmación y elimina solamente el borrador de ese
-  día y su descanso, sin añadir nada al historial. Los otros días se conservan.
-• Para probar: iniciar, cargar datos y terminar con Descartar sesión.
-• Si había un borrador de V2, aparece Continuar borrador. Los datos se
-  conservan; el reloj comienza al retomarlo porque V2 no guardaba el inicio.
-  Si era una prueba vieja, usar Descartar sesión antes de entrenar.
-
-COMPATIBILIDAD
-Rutina y funciones de V2 conservadas: referencia anterior por serie,
-progresión por ejercicio y descanso automático. El aviso en iPhone bloqueado
-sigue sin estar garantizado; al volver se recalcula el descanso.
-workouts, activeDay y draft-{día}-{ejercicio}-{serie} mantienen sus formatos.
-No se migran ni eliminan los registros existentes durante la actualización.
-La clave nueva marcos-training-session-v1 guarda día y hora de inicio.
-La caché del sitio se renueva, sin borrar el almacenamiento de entrenamientos.
-
-VERIFICACIÓN
-Pruebas de modo consulta sin escritura, inicio, recarga y continuación,
-conservación de la hora inicial, aislamiento de días, confirmaciones,
-descarte sin historial, conservación de borradores de V2, guardado de
-la duración y conservación del historial. También pasaron las pruebas de
-referencias, progresión y descanso de V2. Prueba en navegador de inicio,
-carga, descanso y continuación tras recargar. Pendiente validar sonido y
-comportamiento en un iPhone físico.
+Se preservan historial anterior, borradores originales y sesión pendiente.
+Pruebas automatizadas: separación de historial y borradores por máquina,
+cambio de alternativa, guardado y comparación con registros anteriores.
+Verificación visual en iPhone pendiente.
